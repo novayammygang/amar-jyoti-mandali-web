@@ -92,12 +92,3 @@ Hero.propTypes = {
   ctaText: PropTypes.string,
   ctaLink: PropTypes.string
 };
-
-Hero.defaultProps = {
-  title: "React landing page with Chakra UI",
-  subtitle:
-    "This is the subheader section where you describe the basic benefits of your product",
-  image: "https://source.unsplash.com/collection/404339/800x600",
-  ctaText: "About us",
-  ctaLink: "/about"
-};
