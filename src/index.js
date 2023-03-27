@@ -1,17 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { BrowserRouter } from "react-router-dom";
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import { ChakraProvider } from "@chakra-ui/react";
 
+import App from "./App";
+import customTheme from "./utils/theme";
 
+const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById("root")
+  <React.StrictMode>
+    <ChakraProvider theme={customTheme}>
+      <App />
+    </ChakraProvider>
+  </React.StrictMode>,
+  rootElement
 );

@@ -1,47 +1,32 @@
 {
-  "name": "react-cors-spa",
+  "name": "chakra-landing-page-part-1",
   "version": "1.0.0",
-  "private": false,
-  "email": "jguilloi@amazon.fr",
-  "license": "MIT",
-  "devDependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "react-scripts": "^5.0.1"
-  },
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
   "dependencies": {
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
-    "@fontsource/roboto": "^4.5.8",
-    "@mui/material": "^5.11.14",
-    "react": "^17.0.2",
-    "react-async": "^10.0.1",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "6"
+    "@chakra-ui/react": "1.0.3",
+    "@emotion/react": "11.1.2",
+    "@emotion/styled": "11.0.0",
+    "framer-motion": "2.9.5",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "^2.1.3"
+  },
+  "devDependencies": {
+    "typescript": "3.8.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
